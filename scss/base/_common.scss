@@ -11,12 +11,20 @@ body {
       padding-bottom: 60px;
     }
 
-    @include mq(desktop) {
+    @include mq(desktop) { 
       padding-top: 94px;
       padding-bottom: 94px; 
     }
 }
- 
+  
 .title {
+    margin-bottom: 30px;
+
+    @include mq(tablet) {
+      margin-bottom: 30px;
+    } 
+ 
+    @include mq(desktop) { 
     margin-bottom: 50px;
+    }
 }

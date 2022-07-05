@@ -1,24 +1,45 @@
 /*====HERO=====*/
 
 .hero {
-    padding: 200px 0;
+    padding: 118px 0;
     text-align: center;
     background-color: #2f303a;
-}
+
+    @include mq(desktop) {
+        padding: 200px 0; 
+    }
+} 
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
+    max-width: 480px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/hero.jpg);
+        url(/images/hero/Hero_s.jpg);   
+
+    @include mq(tablet) {
+        max-width: 768px;
+        height: 400px; 
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),    
+           rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_m.jpg);
+    }
+
+    @include mq(desktop) {
+        max-width: 1600px;
+        height: 600px;
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(../images/hero/hero_l.jpg); 
+    } 
+
     background-size: cover;
     background-color: #C4C4C4;
-    /*background-repeat: no-repeat;
+    /*background-repeat: no-repeat; 
   background-position: center;*/
-}
+} 
 
 .hero__title {
     margin-bottom: 30px;
@@ -27,7 +48,7 @@
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--text-hero-footer); 
+    color: var(--text-hero-footer);      
 }
 
 .hero__modal-btn {
