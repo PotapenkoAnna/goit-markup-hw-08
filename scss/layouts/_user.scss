@@ -12,12 +12,11 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-main);
-
+ 
     @include mq(desktop) {
         font-size: 36px;
         line-height: 1.17; 
     }
-    
 } 
 
 .users-team {
@@ -126,8 +125,6 @@
         margin-left: 32px;
         margin-right: 32px;
     }
-
-
 }
 
 .social-list-link {
@@ -150,6 +147,4 @@
  
 .social-list-icon {
     fill: currentColor;
-}
-
-<!-- не уужимаэться картинка і не здвигаються соц іконки при зменшенні моб екрану-->
+} 

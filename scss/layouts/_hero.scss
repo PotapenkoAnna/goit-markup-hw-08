@@ -4,7 +4,7 @@
     padding: 118px 0;
     text-align: center;
     background-color: #2f303a;
-
+ 
     @include mq(desktop) {
         padding: 200px 0; 
     }
@@ -17,14 +17,14 @@
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(/images/hero/Hero_s.jpg);   
+        url(/images/hero/hero_s.jpg);   
 
     @include mq(tablet) {
         max-width: 768px;
         height: 400px; 
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),    
            rgba(47, 48, 58, 0.4)),
-            url(../images/hero/hero_m.jpg);
+            url(/images/hero/hero_m.jpg);
     }
 
     @include mq(desktop) {
@@ -32,7 +32,7 @@
         height: 600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(../images/hero/hero_l.jpg); 
+            url(/images/hero/hero_l.jpg);  
     } 
 
     background-size: cover;
@@ -44,22 +44,27 @@
 .hero__title {
     margin-bottom: 30px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--text-hero-footer);      
+    color: var(--text-hero-footer); 
+
+    @include mq(desktop) { 
+      font-size: 44px;
+      line-height: 1.36;
+    }
 }
 
 .hero__modal-btn {
     min-width: 200px;
-    padding: 8px 30px;
+    padding: 10px 32px;
     font-family: inherit;
     font-weight: bold;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    cursor: pointer;
+    cursor: pointer; 
     color: var(--text-hero-footer);
     background-color: var(--accent-color);
     border-radius: 4px;
