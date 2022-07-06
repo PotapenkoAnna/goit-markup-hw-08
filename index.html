@@ -165,10 +165,29 @@
             <h2 class="user-title title">Наша команда</h2>
             <ul class="users-team list">
                 <li class="users-team-box">
-                    <img class="users-team-foto" src="./images/foto1.jpg" 
-                    alt="Игорь Демьяненко" 
-                    width="270" 
-                    height="260"> 
+                    <picture>
+                        <!--Набор изображений для десктопных екранов-->
+                        <source media="(min-width: 1600px)" 
+                        srcset="./images\user\user-1_l.jpg 1x,
+                                ./images\user\user-1_l@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для планшетных екранов-->
+                        <source media="(min-width: 768px)" 
+                        srcset="./images\user\user-1_m.jpg 1x,
+                                ./images\user\user-1_m@2x.jpg 2x"
+                         type="image/jpg"> 
+                        <!--Набор изображений для мобильных екранов-->
+                        <source media="(max-width: 767px)" 
+                        srcset="./images\user\user-1_s.jpg 1x,
+                                ./images\user\user-1_s@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Дефолтное изображение-->
+                    <img class="users-team-foto" 
+                    src="./images/user/user-1_s.jpg"  
+                    alt="Игорь Демьяненко"  
+                    width="450" 
+                    height="460"> 
+                    </picture>
                     <div class="user-team-wrapper">
                        <h3 class="user-name">Игорь Демьяненко</h3>
                        <p class="user-position">Product Designer</p>
@@ -202,10 +221,27 @@
                     </div>   
                 </li>
                 <li class="users-team-box">
-                    <img class="users-team-foto" src="./images/foto2.jpg" 
+                    <picture>
+                        <!--Набор изображений для десктопных екранов-->
+                        <source media="(min-width: 1600px)" 
+                        srcset="./images\user\user-2_l.jpg 1x,
+                                ./images\user\user-2_l@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для планшетных екранов-->
+                        <source media="(min-width: 768px)" 
+                        srcset="./images\user\user-2_m.jpg 1x,
+                                ./images\user\user-2_m@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для мобильных екранов-->
+                        <source media="(max-width: 767px)" 
+                        srcset="./images\user\user-2_s.jpg 1x,
+                                ./images\user\user-2_s@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Дефолтное изображение-->
+                    <img class="users-team-foto" src="./images\user\user-2_s.jpg" 
                     alt="Ольга Репина" 
-                    width="270" 
-                    height="260">
+                    width="450" 
+                    height="460">
                     <div class="user-team-wrapper">  
                        <h3 class="user-name">Ольга Репина</h3>
                        <p class="user-position">Frontend Developer</p>
@@ -242,10 +278,27 @@
                     </div>
                 </li>
                 <li class="users-team-box">
-                    <img class="users-team-foto" src="./images/foto3.jpg" 
+                    <picture>
+                        <!--Набор изображений для десктопных екранов-->
+                        <source media="(min-width: 1600px)" 
+                        srcset="./images\user\user-3_l.jpg 1x,
+                                ./images\user\user-3_l@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для планшетных екранов-->
+                        <source media="(min-width: 768px)" 
+                        srcset="./images\user\user-3_m.jpg 1x,
+                                ./images\user\user-3_m@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для мобильных екранов-->
+                        <source media="(max-width: 767px)" 
+                        srcset="./images\user\user-3_s.jpg 1x,
+                                ./images\user\user-3_s@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Дефолтное изображение-->
+                    <img class="users-team-foto" src="./images\user\user-3_s.jpg" 
                     alt="Николай Тарасов" 
-                    width="270" 
-                    height="260">
+                    width="460" 
+                    height="450">
                     <div class="user-team-wrapper">
                        <h3 class="user-name">Николай Тарасов</h3> 
                        <p class="user-position">Marketing</p>
@@ -282,10 +335,27 @@
                     </div>    
                 </li>
                 <li class="users-team-box">
-                    <img class="users-team-foto" src="./images/foto4.jpg" 
+                    <picture>
+                        <!--Набор изображений для десктопных екранов-->
+                        <source media="(min-width: 1600px)" 
+                        srcset="./images\user\user-4_l.jpg 1x,
+                                ./images\user\user-4_l@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для планшетных екранов-->
+                        <source media="(min-width: 768px)" 
+                        srcset="./images\user\user-4_m.jpg 1x,
+                                ./images\user\user-4_m@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Набор изображений для мобильных екранов-->
+                        <source media="(max-width: 767px)" 
+                        srcset="./images\user\user-4_s.jpg 1x,
+                                ./images\user\user-4_s@2x.jpg 2x" 
+                        type="image/jpg">
+                        <!--Дефолтное изображение-->
+                    <img class="users-team-foto" src="./images\user\user-4_s.jpg"  
                     alt="Михаил Ермаков" 
-                    width="270" 
-                    height="260">
+                    width="460" 
+                    height="450">
                     <div class="user-team-wrapper">
                        <h3 class="user-name">Михаил Ермаков</h3>
                        <p class="user-position">UI Designer</p>

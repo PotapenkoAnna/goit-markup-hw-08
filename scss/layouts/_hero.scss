@@ -17,14 +17,26 @@
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(/images/hero/hero_s.jpg);   
+        url(/images/hero/hero_s.jpg);  
+        
+    @include mq(retina) {
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),  
+            rgba(47, 48, 58, 0.4)),
+            url(/images/hero/hero_s@2x.jpg);
+        }
 
-    @include mq(tablet) {
+    @include mq(tablet) { 
         max-width: 768px;
         height: 400px; 
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),    
            rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero_m.jpg);
+            url(/images/hero/hero_m.jpg); 
+
+    @include mq(retina) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+           rgba(47, 48, 58, 0.4)),
+            url(/images/hero/hero_m@2x.jpg);
+        }
     }
 
     @include mq(desktop) {
@@ -33,9 +45,15 @@
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
             url(/images/hero/hero_l.jpg);  
+
+    @include mq(retina) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+            url(/images/hero/hero_l@2x.jpg);
+        }
     } 
 
-    background-size: cover;
+    background-size: cover; 
     background-color: #C4C4C4;
     /*background-repeat: no-repeat; 
   background-position: center;*/
@@ -48,7 +66,7 @@
     line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--text-hero-footer); 
+    color: var(--text-hero-footer);  
 
     @include mq(desktop) { 
       font-size: 44px;
