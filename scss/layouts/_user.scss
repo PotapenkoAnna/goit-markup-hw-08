@@ -54,21 +54,15 @@
 }
 
 .users-team-foto { 
-    background: url(4853.jpg);
+    background: url(img);
     border-radius: 0px;
  
-    @include mq(mobile-only) { 
-        width: 450px;
-        height: 460px;  
-    } 
-     
-     
-    @include mq(tablet-only) {
-        width: 354px;  
-        height: 374px;
+    @include mq(desktop) {
+        background: url(4853.jpg);
     }
+ 
 
-}
+} 
 
 .user-team-wrapper {  
     background: #ffffff;
@@ -79,7 +73,7 @@
     border-radius: 0px 0px 4px 4px;
 
     @include mq(tablet) {
-        padding-top: 30px;
+        padding-top: 30px; 
         padding-bottom: 24px;
     }
 
@@ -108,22 +102,23 @@
     color: var(--secondary-text-main);
     margin-bottom: 16px;
 }
-
-.social-list {
+ 
+.social-list { 
     display: flex;
-    width: 206px;
     margin-left: 122px;
-    margin-right: 122px;
-    justify-content: space-between;
+    margin-right: 122px; 
+    justify-content: center;
 
     @include mq(tablet) {
         margin-left: 74px; 
         margin-right: 74px;
+        justify-content: space-between;
     }
     
-    @include mq(desktop) {
+    @include mq(desktop) { 
         margin-left: 32px;
         margin-right: 32px;
+        justify-content: space-between;
     }
 }
 
