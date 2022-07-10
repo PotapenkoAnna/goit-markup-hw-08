@@ -1,20 +1,31 @@
 .modal-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 50px;
+  @include mq(tablet) {
+      display: flex;
+      justify-content: center;
+    }
+  margin-bottom: 50px; 
 }
 
-.modal-btn-item:not(:last-child) {
-  margin-right: 8px; 
+.modal-btn-item {
+  display: inline-block;
+  
+    &:not(:last-child) {
+      margin-right: 8px;
+    } 
+  
+    @include mq(mobile-only) {
+      &:nth-child(n+4) {
+        margin-top: 15px;
+      }
+    }
 }
 
 .modal-btn-portfolio { 
-  padding: 6px 22px;
+  padding: 6px 22px; 
   border: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.63; 
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;

@@ -10,7 +10,7 @@
 
 //     mobileMenuRef.classList.toggle("is-open");
 // });
-// })();
+// })(); 
 
 (() => {
     const mobileMenu = document.querySelector('.js-menu-container');
