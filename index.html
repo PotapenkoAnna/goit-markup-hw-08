@@ -19,28 +19,30 @@
 
 <!-- Шапка с навигацией -->  
     <header class="header">
-        <div class="container header__container"> 
+        <div class="container header__container">  
             <nav class="navigation">
                 <a class="navigation__logo link" href="./index.html" lang="en">
                     Web<span class="navigation__accentlogo">Studio</span>
                 </a> 
-                <button type="button" class="menu-button is-open" 
+
+                <button class="menu-button js-open-menu" 
+                type="button"
+                data-menu-button
                 aria-expanded="false"
-                aria-controls="menu-container"
-                data-menu-button>    
-                    <svg width="40" height="40"  
+                aria-controls="menu-container">   
+                   <svg width="40" height="40"  
                      aria-label="Переключатель мобильного меню">
-                        <use class="menu-button__icon-close" href="./images/sprite.svg#close_menu"></use>
-                        <use class="menu-button__icon-menu" href="./images/sprite.svg#menu"></use>
-                    </svg>  
+                        <use class="icon-menu" href="./images/sprite.svg#menu"></use>
                 </button>
 
-                <div class="menu-container is-open" id="menu-container" data-menu>   
-                     
-                </div>  
-
+                <div class="menu-container js-menu-container" id="mobile-menu" data-menu>
+                    <button class="menu-button js-close-menu">
+                        <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
+                            <use class="icon-cross" href="./images/sprite.svg#close_menu" xmlns="http://www.w3.org/2000/svg"></use>
+                        </svg>
+ 
                
-                <ul class="navigation__list list">
+                <ul class="navigation__list list"> 
                     <li class="navigation__list-item">
                         <a class="navigation__list-link link current" href="./index.html">Студия</a>
                     </li>
@@ -49,10 +51,10 @@
                     </li>
                     <li class="navigation__list-item">
                         <a class="navigation__list-link link" href="">Контакты</a>  
-                    </li>
+                    </li> 
                 </ul> 
             </nav> 
-            <ul class="header__contacts list"> 
+                <ul class="header__contacts list"> 
                 <li class="header__contacts-item">
                     <a class="header__contacts-link link" href="mailto:info@devstudio.com">
                         <svg class="header__contacts-icon" width="16" height="12">
@@ -67,9 +69,10 @@
                         </svg> 
                         +38 096 111 11 11</a> 
                 </li>
-            </ul>
+            </ul> 
+            </div>
         </div>
-    </header>  
+    </header>    
  
 <!-- Основной контент сайту-->  
 
@@ -131,32 +134,44 @@
             <ul class=" gallery__items list">
                 <li class="gallery__items-box">
                     <div class="gallery__wrapper">
-                    <img class="gallery__img" src="./images/gallery/gallery-1_l.jpg" 
+                    <img class="gallery__img"
+                    srcset="./images/gallery/gallery-1_l.jpg
+                            ./images/gallery/gallery-1_l@2x.jpg"
+                    src="./images/gallery/gallery-1_l.jpg" 
                     alt="набор текста"
                      width="370" 
-                     height="294">
+                     height="294" 
+                     sizes="(min-width: 1200px) 370px, 100vw">
                      </div>
                     <p class="gallery__overlay">Десктопные приложения</p>
                 </li>
                 <li class="gallery__items-box">
                     <div class="gallery__wrapper">
-                    <img class="gallery__img" src="./images/gallery/gallery-2_l.jpg" 
+                    <img class="gallery__img"  
+                    srcset="./images/gallery/gallery-2_l.jpg
+                            ./images/gallery/gallery-2_l@2x.jpg"
+                    src="./images/gallery/gallery-2_l.jpg" 
                     alt="просмотр" 
                     width="370"  
-                    height="294">
+                    height="294"
+                    sizes="(min-width: 1200px) 370px, 100vw">
                 </div>
                 <p class="gallery__overlay">Мобильные приложения</p>
               </li> 
                 <li class="gallery__items-box">
                     <div class="gallery__wrapper">
-                    <img class="gallery__img" src="./images/gallery/gallery-3_l.jpg"  
+                    <img class="gallery__img" 
+                    srcset="./images/gallery/gallery-3_l.jpg
+                            ./images/gallery/gallery-3_l@2x.jpg"
+                    src="./images/gallery/gallery-3_l.jpg" 
                     alt="яркая картинка" 
                     width="370" 
-                    height="294">
+                    height="294"
+                    sizes="(min-width: 1200px) 370px, 100vw">
                     </div>
                     <p class="gallery__overlay">Дизайнерские решения</p>
                 </li> 
-            </ul> 
+            </ul>  
             </div>
         </section>
 <!-- Cотрудники-->

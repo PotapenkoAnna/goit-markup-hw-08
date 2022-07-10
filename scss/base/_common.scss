@@ -2,6 +2,10 @@ body {
     font-family: var(--primary-font-family);
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -11,7 +15,7 @@ body {
       padding-bottom: 60px;
     }
 
-    @include mq(desktop) { 
+    @include mq(desktop) {  
       padding-top: 94px;
       padding-bottom: 94px; 
     }
