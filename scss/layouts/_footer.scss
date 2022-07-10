@@ -1,4 +1,4 @@
-/*=======Контакты=========*/
+/*=======Контакты=========*/ 
 
 .accentlogo-contacts {
     color: var(--text-hero-footer);
@@ -14,14 +14,46 @@
 }
 
 .contact-footer {
+    width: 100%;
     padding-top: 60px;
     padding-bottom: 60px;
     background: #2f303a;
+
+}
+
+.footer-container {
+    @include mq(desktop) {
+    display: flex;
+    align-items: baseline;
+    }
+} 
+
+.footer-wrapper {
+    @include mq(tablet) {
+        display: flex;
+        align-items: baseline;
+
+    }
+
+    @include mq(desktop) {
+        margin-right: 93px;
+    }
+}
+
+.address-box {
+    text-align: start;
+
+    @include mq(not-desktop) {
+        text-align: center;
+    }
+
+        @include mq(tablet-only) {
+            margin-left: 76px;
+        }
 }
  
 .address {
     margin-top: 20px;
-    margin-bottom: 9px;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -29,10 +61,10 @@
     letter-spacing: 0.03em;
     color: var(--text-hero-footer);
 }
-
+ 
 .contact-item-box:not(:first-child) {
     margin-top: 9px;
-}
+} 
 
 .contact-item-footer {
     font-size: 14px;
@@ -41,23 +73,23 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-container {
-    display: flex;
-    align-items: baseline;
-}
-
-.address-box {
-    margin-right: 70px;
-    min-width: 230px;
-}
-
+ 
 .footer-box {
-    display: flex;
-    flex-direction: column;
-    margin-right: 93px;
+    @include mq(mobile-only) {
+        margin-top: 60px;
+    }
+    
+    @include mq(tablet-only) {
+        margin-left: 165px;
+    }
+    
+    @include mq(desktop) {
+        margin-left: 85px;
+    
+    }
 }
 
-.footer-social-text {
+.footer-slogan {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -65,14 +97,25 @@
     text-transform: uppercase;
     color: var(--text-hero-footer);
     margin-bottom: 20px;
+
+    @include mq(not-desktop) {
+        text-align: center;
+    }
+
+    @include mq(desktop) {
+        text-align: start;
+        margin-bottom: 20px;
+    }
 }
 
 .footer-social-item {
+    margin: auto;  
     display: flex;
     width: 206px;
-    align-items: center;
+    text-align: center;
     justify-content: space-between;
-    list-style: none;
+    list-style: none;  
+
 }
 
 .footer-social-link {
@@ -96,30 +139,42 @@
 }
 
 .contact-form-wrapper {
-    display: flex;
-    flex-direction: column;
+    @include mq(not-desktop) {
+            margin-top: 60px;
+        }
+    
 }
+
 
 .contact-form {
     display: flex;
-    justify-items: flex-start;
+    align-items: center; 
+    
+    @include mq(not-desktop) {
+            flex-direction: column;
+            margin-top: 20px; 
+    }
+    
+    @include mq(desktop) {}
 }
 
-.contact-form-title {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--text-hero-footer);
-    margin-bottom: 20px;
-}
-
+   
 .contact-form-input {
+    @include mq(not-desktop) {
+            max-width: 100%;
+            width: 450px;
+        }
+     
+        @include mq(desktop) {
+            width: 358px;
+        }
     box-sizing: border-box;
-    width: 358px;
+    max-width: 100%; 
     height: 50px;
-    margin-right: 12px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-right: 12px 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -150,6 +205,7 @@
 }
 
 .contact-form-button {
+
     width: 200px;
     height: 50px;
     background-color: #2196F3;
@@ -159,15 +215,23 @@
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex; 
+    display: flex;
     align-items: center;
     text-align: center;
     padding-left: 29px;
     letter-spacing: 0.06em;
     color: #FFFFFF;
     border: none;
+    
+    @include mq(not-desktop) {
+        margin-top: 20px;
+    }
+    @include mq(desktop) {
+        margin-left: 12px;
+    }
+    
 }
 
 .contact-form-icon {
     margin-left: 10px;
-}
+} 
