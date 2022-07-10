@@ -34,6 +34,7 @@
                    <svg width="40" height="40"  
                      aria-label="Переключатель мобильного меню"> 
                         <use class="icon-menu" href="./images/sprite.svg#menu"></use>
+                    </svg> 
                 </button>
                 </div>
 
@@ -42,7 +43,7 @@
                         <svg width="40px" height="40px" aria-label="переключатель мобильного меню">
                             <use class="icon-cross" href="./images/sprite.svg#close_menu" xmlns="http://www.w3.org/2000/svg"></use>
                         </svg>
-                        </button>
+                        </button> 
                 
                 <ul class="navigation__list list">  
                     <li class="navigation__list-item">
@@ -79,7 +80,7 @@
                 <li class="mobile-socials__item">
                     <a href="./" class="mobile-socials__link">Twitter</a>
                 </li>
-                <li class="mobile-socials__item">
+                <li class="mobile-socials__item"> 
                     <a href="./" class="mobile-socials__link">Facebook</a>
                 </li>
                 <li class="mobile-socials__item">
@@ -145,15 +146,15 @@
             </div>
         </section>
 <!-- Галерея-->
-<section class="gallery section"> 
+<section class="gallery section">
             <div class="container gallery__container"> 
             <h2 class="gallery__title title">Чем мы занимаемся</h2>
             <ul class=" gallery__items list">
                 <li class="gallery__items-box">
                     <div class="gallery__wrapper">
                     <img class="gallery__img"
-                    srcset="./images/gallery/gallery-1_l.jpg
-                            ./images/gallery/gallery-1_l@2x.jpg"
+                    srcset="./images/gallery/gallery-1_l.jpg 1x,
+                            ./images/gallery/gallery-1_l@2x.jpg 2x"
                     src="./images/gallery/gallery-1_l.jpg" 
                     alt="набор текста"
                      width="370" 
@@ -165,8 +166,8 @@
                 <li class="gallery__items-box">
                     <div class="gallery__wrapper">
                     <img class="gallery__img"  
-                    srcset="./images/gallery/gallery-2_l.jpg
-                            ./images/gallery/gallery-2_l@2x.jpg"
+                    srcset="./images/gallery/gallery-2_l.jpg 1x, 
+                            ./images/gallery/gallery-2_l@2x.jpg 2x"
                     src="./images/gallery/gallery-2_l.jpg" 
                     alt="просмотр" 
                     width="370"  
@@ -177,9 +178,9 @@
               </li> 
                 <li class="gallery__items-box">
                     <div class="gallery__wrapper">
-                    <img class="gallery__img" 
-                    srcset="./images/gallery/gallery-3_l.jpg
-                            ./images/gallery/gallery-3_l@2x.jpg"
+                    <img class="gallery__img"  
+                    srcset="./images/gallery/gallery-3_l.jpg 1x,
+                            ./images/gallery/gallery-3_l@2x.jpg 2x"
                     src="./images/gallery/gallery-3_l.jpg" 
                     alt="яркая картинка" 
                     width="370" 
@@ -200,18 +201,18 @@
                     <picture>
                         <!--Набор изображений для десктопных екранов-->
                         <source media="(min-width: 1200px)" 
-                        srcset="./images\user\user-1_l.jpg 1x,
-                                ./images\user\user-1_l@2x.jpg 2x" 
+                        srcset="./images/user/user-1_l.jpg 1x,
+                                ./images/user/user-1_l@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для планшетных екранов-->
                         <source media="(min-width: 768px)" 
-                        srcset="./images\user\user-1_m.jpg 1x,
-                                ./images\user\user-1_m@2x.jpg 2x"
+                        srcset="./images/user/user-1_m.jpg 1x,
+                                ./images/user/user-1_m@2x.jpg 2x"
                          type="image/jpg"> 
                         <!--Набор изображений для мобильных екранов-->
                         <source media="(max-width: 767px)" 
-                        srcset="./images\user\user-1_s.jpg 1x,
-                                ./images\user\user-1_s@2x.jpg 2x" 
+                        srcset="./images/user/user-1_s.jpg 1x,
+                                ./images/user/user-1_s@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Дефолтное изображение-->
                     <img class="users-team-foto" 
@@ -256,24 +257,25 @@
                     <picture>
                         <!--Набор изображений для десктопных екранов-->
                         <source media="(min-width: 1200px)" 
-                        srcset="./images\user\user-2_l.jpg 1x,
-                                ./images\user\user-2_l@2x.jpg 2x" 
+                        srcset="./images/user/user-2_l.jpg 1x,
+                                ./images/user/user-2_l@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для планшетных екранов-->
                         <source media="(min-width: 768px)" 
-                        srcset="./images\user\user-2_m.jpg 1x,
-                                ./images\user\user-2_m@2x.jpg 2x" 
+                        srcset="./images/user/user-2_m.jpg 1x,
+                                ./images/user/user-2_m@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для мобильных екранов-->
                         <source media="(max-width: 767px)" 
-                        srcset="./images\user\user-2_s.jpg 1x,
-                                ./images\user\user-2_s@2x.jpg 2x" 
+                        srcset="./images/user/user-2_s.jpg 1x,
+                                ./images/user/user-2_s@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Дефолтное изображение-->
-                    <img class="users-team-foto" src="./images\user\user-2_s.jpg" 
+                    <img class="users-team-foto" src="./images/user/user-2_s.jpg" 
                     alt="Ольга Репина" 
                     width="450" 
                     height="460">
+                    </picture>
                     <div class="user-team-wrapper">  
                        <h3 class="user-name">Ольга Репина</h3>
                        <p class="user-position">Frontend Developer</p>
@@ -313,24 +315,25 @@
                     <picture>
                         <!--Набор изображений для десктопных екранов-->
                         <source media="(min-width: 1600px)" 
-                        srcset="./images\user\user-3_l.jpg 1x,
-                                ./images\user\user-3_l@2x.jpg 2x" 
+                        srcset="./images/user/user-3_l.jpg 1x,
+                                ./images/user/user-3_l@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для планшетных екранов-->
                         <source media="(min-width: 768px)" 
-                        srcset="./images\user\user-3_m.jpg 1x,
-                                ./images\user\user-3_m@2x.jpg 2x" 
+                        srcset="./images/user/user-3_m.jpg 1x,
+                                ./images/user/user-3_m@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для мобильных екранов-->
                         <source media="(max-width: 767px)" 
-                        srcset="./images\user\user-3_s.jpg 1x,
-                                ./images\user\user-3_s@2x.jpg 2x" 
+                        srcset="./images/user/user-3_s.jpg 1x,
+                                ./images/user/user-3_s@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Дефолтное изображение-->
-                    <img class="users-team-foto" src="./images\user\user-3_s.jpg" 
+                    <img class="users-team-foto" src="./images/user/user-3_s.jpg" 
                     alt="Николай Тарасов" 
                     width="460" 
                     height="450">
+                    </picture>
                     <div class="user-team-wrapper">
                        <h3 class="user-name">Николай Тарасов</h3> 
                        <p class="user-position">Marketing</p>
@@ -370,24 +373,25 @@
                     <picture>
                         <!--Набор изображений для десктопных екранов-->
                         <source media="(min-width: 1600px)" 
-                        srcset="./images\user\user-4_l.jpg 1x,
-                                ./images\user\user-4_l@2x.jpg 2x" 
+                        srcset="./images/user/user-4_l.jpg 1x,
+                                ./images/user/user-4_l@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для планшетных екранов-->
                         <source media="(min-width: 768px)" 
-                        srcset="./images\user\user-4_m.jpg 1x,
-                                ./images\user\user-4_m@2x.jpg 2x" 
+                        srcset="./images/user/user-4_m.jpg 1x,
+                                ./images/user/user-4_m@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Набор изображений для мобильных екранов-->
                         <source media="(max-width: 767px)" 
-                        srcset="./images\user\user-4_s.jpg 1x,
-                                ./images\user\user-4_s@2x.jpg 2x" 
+                        srcset="./images/user/user-4_s.jpg 1x,
+                                ./images/user/user-4_s@2x.jpg 2x" 
                         type="image/jpg">
                         <!--Дефолтное изображение-->
-                    <img class="users-team-foto" src="./images\user\user-4_s.jpg"  
+                    <img class="users-team-foto" src="./images/user/user-4_s.jpg"  
                     alt="Михаил Ермаков" 
                     width="460" 
-                    height="450">
+                    height="450"> 
+                    </picture>
                     <div class="user-team-wrapper">
                        <h3 class="user-name">Михаил Ермаков</h3>
                        <p class="user-position">UI Designer</p>
@@ -420,7 +424,7 @@
                                 </svg>
                             </a>
                         </li>
-                    </ul>
+                    </ul> 
                     </div> 
                 </li>
                 
