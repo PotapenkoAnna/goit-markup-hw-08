@@ -17,12 +17,12 @@
     margin-right: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(/images/hero/hero_s.jpg);  
+        url(../images/hero/hero_s.jpg);  
         
     @include mq(retina) {
             background-image: linear-gradient(rgba(47, 48, 58, 0.4),  
             rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero_s@2x.jpg);
+            url(../images/hero/hero_s@2x.jpg);
         }
 
     @include mq(tablet) { 
@@ -30,12 +30,12 @@
         height: 400px; 
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),    
            rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero_m.jpg); 
+            url(../images/hero/hero_m.jpg); 
 
     @include mq(retina) {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), 
            rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero_m@2x.jpg);
+            url(../images/hero/hero_m@2x.jpg);
         }
     }
  
@@ -44,12 +44,12 @@
         height: 600px;
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero_l.jpg);  
+            url(../images/hero/hero_l.jpg);  
 
-    @include mq(retina) {
+    @include mq(retina) { 
         background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-            url(/images/hero/hero_l@2x.jpg);
+            url(../images/hero/hero_l@2x.jpg);
         }
     }  
 
