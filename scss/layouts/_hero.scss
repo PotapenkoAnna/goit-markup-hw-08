@@ -10,11 +10,11 @@
     }
 
     
-} 
+}  
   
 .overlay {
     
-    margin-left: auto;    
+    margin-left: auto;     
     margin-right: auto;  
 
     @include mq(mobile-only) {
@@ -25,7 +25,7 @@
         padding-bottom: 118px;    
 
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero/hero_s.jpg);
+    url(../images/hero/hero_s.jpg); 
     
        
      @include mq(retina) {
