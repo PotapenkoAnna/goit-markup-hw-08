@@ -12,7 +12,7 @@
  
 .portfolio-list-box {  
     display: inline-block;
-        margin-bottom: 30px;
+        margin-bottom: 30px; 
     
         @include mq(mobile-only) {
             width: 450px;
@@ -66,9 +66,8 @@
     padding-left: 24px;
     padding-bottom: 20px;
     border: 1px solid #eeeeee;
-
          
-   }
+}
 
 .portfolio-current {   
     border: none;

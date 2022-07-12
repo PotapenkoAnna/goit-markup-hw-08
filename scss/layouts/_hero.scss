@@ -65,8 +65,7 @@
  
     background-size: cover; 
     background-color: #C4C4C4;  
-    /*background-repeat: no-repeat;   
-  background-position: center;*/
+   
 } 
 
 .hero__title {
@@ -79,7 +78,7 @@
     color: var(--text-hero-footer);  
 
     @include mq(desktop) { 
-      font-size: 44px;
+      font-size: 44px; 
       line-height: 1.36;
     }  
 }

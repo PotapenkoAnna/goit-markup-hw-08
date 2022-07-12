@@ -2,8 +2,7 @@
 
 .header {
     position: relative;
-    border-bottom: 1px solid #ececec;
-    
+    border-bottom: 1px solid #ececec;    
 }
   
 /*.header__container {
@@ -177,7 +176,7 @@
             align-items: center;
             margin-right: 305px;
         }
-    }
+}
 
 
 .navigation__list-item {
@@ -244,9 +243,9 @@
             }
         }
     
-        @include mq(desktop) {
+     @include mq(desktop) {
 
-        }
+    }
 }
 
 /*.current::after {
@@ -341,7 +340,7 @@
             font-size: 14px;
             padding-top: 32px;
             padding-bottom: 32px;
-        }
+        } 
 }
 
 .header__contacts-icon {
