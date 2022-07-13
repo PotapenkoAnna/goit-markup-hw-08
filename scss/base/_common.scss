@@ -1,5 +1,5 @@
 body {
-    font-family: var(--primary-font-family);
+  font-family: var(--primary-font-family);
 }
 
 body.modal-open {
@@ -7,28 +7,28 @@ body.modal-open {
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @include mq(tablet) {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
 
-    @include mq(tablet) {
-      padding-top: 60px;
-      padding-bottom: 60px;
-    }
-
-    @include mq(desktop) {  
-      padding-top: 94px;
-      padding-bottom: 94px; 
-    }
+  @include mq(desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
-  
-.title {
-    margin-bottom: 30px;
 
-    @include mq(tablet) {
-      margin-bottom: 30px;
-    } 
- 
-    @include mq(desktop) { 
+.title {
+  margin-bottom: 30px;
+
+  @include mq(tablet) {
+    margin-bottom: 30px;
+  }
+
+  @include mq(desktop) {
     margin-bottom: 50px;
-    }
+  }
 }
